@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "X Video Speed",
+  "version": "1.0.0",
+  "description": "Adds simple playback speed controls to videos on X.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
